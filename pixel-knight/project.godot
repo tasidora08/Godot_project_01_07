@@ -11,7 +11,13 @@ config_version=5
 [application]
 
 config/name="pixel_knight"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="uid://bb7kdlujgx77u"
+config/features=PackedStringArray("4.5", "C#", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [dotnet]
 

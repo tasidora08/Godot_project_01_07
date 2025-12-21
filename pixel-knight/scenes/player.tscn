@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://eu8myoo85rbc"]
+[gd_scene load_steps=16 format=3 uid="uid://eu8myoo85rbc"]
 
 [ext_resource type="Texture2D" uid="uid://bvyvvgpp0qwd4" path="res://pic/knigh14211.png" id="1_3vyb7"]
 
@@ -109,6 +109,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
+height = 28.0
+
 [node name="player" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -119,5 +122,12 @@ vframes = 7
 frame = 4
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-5.9604645e-07, 2.861023e-06)
+scale = Vector2(0.7619048, 0.6451613)
 sprite_frames = SubResource("SpriteFrames_jej6c")
 animation = &"walkleft"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_3vyb7")
