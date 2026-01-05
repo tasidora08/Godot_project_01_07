@@ -1,6 +1,7 @@
-[gd_scene load_steps=42 format=3 uid="uid://eu8myoo85rbc"]
+[gd_scene load_steps=45 format=3 uid="uid://eu8myoo85rbc"]
 
 [ext_resource type="Texture2D" uid="uid://bvyvvgpp0qwd4" path="res://pic/knigh14211.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://cgpbhpgo0cdom" path="res://scenes/Player.cs" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://bt708o22ue6xu" path="res://pic/pngegg.png" id="2_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3vyb7"]
@@ -304,7 +305,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="player" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 21.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qhqgy"]
+radius = 15.0
+height = 32.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_qhqgy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
@@ -327,7 +336,26 @@ shape = SubResource("CapsuleShape2D_3vyb7")
 [node name="SwordAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(2, -26.59375)
+position = Vector2(1, -8.000002)
 scale = Vector2(0.14501953, 0.13820876)
 sprite_frames = SubResource("SpriteFrames_4r5pv")
-animation = &"attack_up"
+animation = &"attack_left"
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_g2els")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_qhqgy")
+
+[connection signal="area_entered" from="Hitbox" to="." method="OnHitboxAreaEntered"]
