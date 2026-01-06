@@ -1,0 +1,7 @@
+~ start
+Király: Nem hiszem el... A koronám a porban hever.
+Király: Az egész seregem elmenekült vagy elesett. Te... te legyőztél engem!
+- Én vagyok az új uralkodó!
+    Király: Úgy legyen. Vedd hát a koronát, de tudd: a hatalom súlya meg fog törni.
+    - Elég a beszédből! 
+        => END
