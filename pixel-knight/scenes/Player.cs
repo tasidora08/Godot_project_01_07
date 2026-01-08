@@ -5,7 +5,8 @@ public partial class Player : CharacterBody2D
 {
 	[Export] private float MoveSpeed = 200f;
 	[Export] public int Health = 100;
-
+	[Export] public int Damage = 20;
+	
 	private AnimatedSprite2D _animatedSprite;
 	private AnimatedSprite2D _swordSprite;
 	private bool _isAttacking = false;
@@ -65,7 +66,7 @@ public partial class Player : CharacterBody2D
 	{
 		Node parent = area.GetParent();
 		if (parent.HasMethod("TakeDamage")) {
-			parent.Call("TakeDamage", 20);
+			parent.Call("TakeDamage", Damage);
 			GD.Print("Megütötted az ellenséget!");
 		}
 	}
@@ -85,6 +86,13 @@ public partial class Player : CharacterBody2D
 	public void Gyogyul(int mennyiseg)
 	{
 		Health += mennyiseg;
-		GD.Print("Bogyó felvéve! Új HP: " + Health);
+		GD.Print("Bogyó felvéve! Új Életerő: " + Health);
+	}
+
+
+	public void SebzesNov(int novekedes)
+	{
+		Damage += novekedes;
+		GD.Print("Láda kinyitva! Új sebzés: " + Damage);
 	}
 }

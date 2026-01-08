@@ -1,16 +1,15 @@
-
 using Godot;
 using System;
 
-public partial class Bogyo : Area2D
+public partial class Chest : Area2D
 {
-	[Export] public int Gyogyitas = 20;
+	[Export] public int sebzesNoveles = 20;
 	private bool playerNearby = false;
 	private Player playerRef;
 
 	public override void _Process(double delta)
 	{
-	
+
 		if (playerNearby && Input.IsActionJustPressed("ui_select"))
 		{
 			Felvetel();
@@ -19,8 +18,8 @@ public partial class Bogyo : Area2D
 
 	private void Felvetel()
 	{
-		playerRef.Gyogyul(Gyogyitas);
-		QueueFree(); // A bogyó eltűnik
+		playerRef.SebzesNov(sebzesNoveles);
+		QueueFree(); 
 	}
 
 

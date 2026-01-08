@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckmryuchi3brl"]
+
+[ext_resource type="Script" uid="uid://big6rup5yntfa" path="res://scenes/Chest.cs" id="1_sy5e1"]
+[ext_resource type="Texture2D" uid="uid://crn8sjvofyn7s" path="res://pic/chest.png" id="2_gqd3d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sy5e1"]
+radius = 16.27882
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sy5e1"]
+size = Vector2(16, 14)
+
+[node name="Chest" type="Area2D"]
+script = ExtResource("1_sy5e1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.22718257, 0.204)
+texture = ExtResource("2_gqd3d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sy5e1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_sy5e1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
