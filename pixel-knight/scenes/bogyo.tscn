@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://tj15omaaep05"]
+
+[ext_resource type="Script" uid="uid://bk1nhux3hxeso" path="res://scenes/Bogyo.cs" id="1_gyg2f"]
+[ext_resource type="Texture2D" uid="uid://dyyygaxpbvx3u" path="res://pic/Bogyó.png" id="1_kmxue"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gyg2f"]
+radius = 42.0
+
+[node name="bogyo" type="Area2D"]
+collision_layer = 0
+monitorable = false
+script = ExtResource("1_gyg2f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.536743e-07, 0)
+scale = Vector2(0.07843141, 0.07105271)
+texture = ExtResource("1_kmxue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15)
+shape = SubResource("CircleShape2D_gyg2f")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

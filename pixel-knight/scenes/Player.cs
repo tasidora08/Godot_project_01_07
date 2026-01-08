@@ -70,7 +70,7 @@ public partial class Player : CharacterBody2D
 		}
 	}
 
-	// Ezt az ellenség hívja meg rajtad, ha megüt
+
 	public void PlayerTakeDamage(int damage)
 	{
 		Health -= damage;
@@ -81,5 +81,10 @@ public partial class Player : CharacterBody2D
 		var deathLabel= GetNode<Label>("CanvasLayer/Label") ;
 		deathLabel.Visible= true;}
 	}
-	
+
+	public void Gyogyul(int mennyiseg)
+	{
+		Health += mennyiseg;
+		GD.Print("Bogyó felvéve! Új HP: " + Health);
+	}
 }
