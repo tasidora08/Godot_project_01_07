@@ -9931,192 +9931,255 @@ position = Vector2(-8259, 0)
 polygon = PackedVector2Array(-1, 4, 6, -317, 9, -704, 2, -783, -236, -800, -643, -818, -647, -1126, -1907, -1126, -1907, -920, -1877, -800, -1883, -643, -1899, -475, -1920, -411, -1957, -325, -2307, -84, -2535, -48, -2580, 981, -2456, 985, -2356, 1045, -2300, 1112, -2249, 1164, -2224, 1373, -2159, 1464, -2054, 1519, -1901, 1664, -1762, 1593, -1616, 1551, -1477, 1579, -1406, 1659, -1309, 1704, -1128, 1617, -946, 1622, -887, 1756, -788, 2037, -647, 2169, -510, 2309, -762, 2528, -376, 2683, -354, 3094, -343, 3353, 703, 3356, 658, 3260, 563, 3106, 523, 2904, 496, 2556, 424, 2011, 424, 1644, 752, 1528, 1053, 1487, 1053, 1208, 556.7031, 1277.0306, 377.58008, 1198.7926, 358, 1011, 163, 683, -4, 382)
 
 [node name="bogyo" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(583, 276)
 
 [node name="bogyo2" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(517, 419)
 
 [node name="bogyo3" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(152, 1680)
 
 [node name="bogyo4" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(10352, -1621)
 
 [node name="bogyo5" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(9480, -1000)
 
 [node name="bogyo6" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(9128, -1856)
 
 [node name="bogyo7" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(6416, -1444)
 
 [node name="bogyo8" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(3624, -2464)
 
 [node name="bogyo9" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(4696, -2504)
 
 [node name="bogyo10" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(3383, -1944)
 
 [node name="bogyo11" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-708, 2768)
 
 [node name="bogyo12" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(7200, 440)
 
 [node name="bogyo13" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(5760, -2024)
 
 [node name="bogyo14" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(7256, -1720)
 
 [node name="bogyo15" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(5632, -824)
 
 [node name="bogyo16" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(3360, -1304)
 
 [node name="bogyo17" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-1120, 1616)
 
 [node name="bogyo18" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(3139, 2360)
 
 [node name="bogyo19" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2648, 288)
 
 [node name="bogyo20" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(1720, -920)
 
 [node name="bogyo21" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-3568, 2784)
 
 [node name="bogyo22" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-2664, 3664)
 
 [node name="bogyo23" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-7512, -1536)
 
 [node name="bogyo24" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-7856, -1216)
 
 [node name="bogyo25" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2032, 1504)
 
 [node name="bogyo26" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6488, -1376)
 
 [node name="bogyo27" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6944, -1656)
 
 [node name="bogyo28" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-8208, -1880)
 
 [node name="bogyo29" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-7072, -2224)
 
 [node name="bogyo30" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-2864, 2840)
 
 [node name="bogyo31" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-2624, 3872)
 
 [node name="bogyo32" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-3320, 3728)
 
 [node name="bogyo33" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-2984, 3352)
 
 [node name="bogyo34" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6976, -357)
 
 [node name="bogyo35" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6936, -967)
 
 [node name="bogyo36" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-7640, 384)
 
 [node name="bogyo37" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-5496, 1112)
 
 [node name="bogyo38" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6384, 4000)
 
 [node name="bogyo39" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-6920, 4208)
 
 [node name="bogyo40" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-7168, 3904)
 
 [node name="bogyo41" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-1152, 2488)
 
 [node name="bogyo42" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2536, 1224)
 
 [node name="bogyo43" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-224, 2464)
 
 [node name="bogyo44" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2768, 2904)
 
 [node name="bogyo45" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2416, 3752)
 
 [node name="bogyo46" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(1720, 3200)
 
 [node name="bogyo47" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-812, 3523)
 
 [node name="bogyo48" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(9440, -328)
 
 [node name="bogyo49" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(8008, -2608)
 
 [node name="bogyo50" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(8304, -1555)
 
 [node name="bogyo51" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(10080, -2188)
 
 [node name="bogyo52" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2491, -2304)
 
 [node name="bogyo53" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(8448, -360)
 
 [node name="bogyo54" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(4080, -664)
 
 [node name="bogyo55" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(4840, -1640)
 
 [node name="bogyo56" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(2632, -720)
 
 [node name="bogyo57" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(832, -632)
 
 [node name="bogyo58" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(1848, 528)
 
 [node name="bogyo59" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(1736, 128)
 
 [node name="bogyo60" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-712, 736)
 
 [node name="bogyo61" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-264, 1032)
 
 [node name="bogyo62" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(816, 544)
 
 [node name="bogyo63" parent="." instance=ExtResource("8_4mrxx")]
+z_index = 15
 position = Vector2(-144, 560)
 
 [node name="enemy17" parent="." instance=ExtResource("6_i7141")]
